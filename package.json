@@ -1,0 +1,79 @@
+{
+  "name": "ggez",
+  "version": "0.0.1",
+  "description": "Compute player performance statistics",
+  "license": "MIT",
+  "repository": "https://github.com/j4ckofalltrades/ggez",
+  "author": {
+    "name": "Jordan Duabe",
+    "email": "me@jduabe.dev",
+    "url": "https://jduabe.dev"
+  },
+  "type": "module",
+  "exports": {
+    "types": "./index.d.ts",
+    "default": "./index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "lint": "npx eslint *.js *.d.ts",
+    "prepare": "husky install",
+    "test": "ava"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "6.13.2",
+    "@typescript-eslint/parser": "6.13.2",
+    "ava": "6.0.0",
+    "eslint": "8.55.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.0.1",
+    "husky": "8.0.3",
+    "lint-staged": "15.2.0",
+    "prettier": "3.1.0"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ]
+    }
+  },
+  "lint-staged": {
+    "*.{js,d.ts}": [
+      "eslint --cache --fix"
+    ]
+  }
+}

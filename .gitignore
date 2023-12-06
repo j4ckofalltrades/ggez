@@ -1,0 +1,8 @@
+.idea/
+.vscode/
+.eslintcache
+node_modules/
+coverage/
+docs/
+dist/
+*.tgz
