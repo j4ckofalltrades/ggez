@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Compute player performance statistics",
   "license": "MIT",
-  "repository": "https://github.com/j4ckofalltrades/ggez",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j4ckofalltrades/ggez.git"
+  },
   "author": {
     "name": "Jordan Duabe",
     "email": "me@jduabe.dev",
